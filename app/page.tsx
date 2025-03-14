@@ -5,9 +5,6 @@ import { Mattresses } from "./ui/bento/Mattresses";
 import { Warranties } from "./ui/bento/Warranties";
 import { Backrests } from "./ui/bento/Backrests";
 import { Combos } from "./ui/bento/Combos";
-import { Button } from "@/components/ui/button";
-import { MapPin, Phone } from "lucide-react";
-import Link from "next/link";
 
 export default function Home() {
   return (

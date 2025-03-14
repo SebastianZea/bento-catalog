@@ -15,18 +15,12 @@ interface Product {
   price: string;
 }
 
+export const dynamic = "force-dynamic";
+
 const products: Product[] = [basecamas, colchones, espaldares, combos];
 
-export default async function ProductPage({
-  params,
-}: {
-  params: { id: string }
-}) {
-  const { id } = params
-  console.log(id)
-
-  const product = products.find((product) => product.id === id)
-  console.log(product)
+export default function ProductPage({ params }: { params: Record<string, string> }) {
+  const product = products.find((p) => p.id === params.id)
 
   if (!product) {
     console.error(`Product ${params.id} not found`);

@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 export default function LocationPage() {
-  
+
   const coords = `6°20'42.2\"N 75°30'50.0\"W`;
   const lat = 6 + 20 / 60 + 42.2 / 3600;
   const lng = -(75 + 30 / 60 + 50.0 / 3600); // Negativo porque es Oeste (W)
@@ -72,32 +72,32 @@ export default function LocationPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <span>Calle 50 #59-132, Medellín, Antioquia</span>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-5 w-5 text-primary" />
+                      <span>Calle 50 #59-132, Medellín, Antioquia</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-5 w-5 text-primary" />
+                      <span>+57 314 513 6801</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-5 w-5 text-primary" />
+                      <span>Lunes a Viernes: 9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-5 w-5 text-primary" />
+                      <span>Sábados: 10:00 AM - 4:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-5 w-5 text-primary" />
+                      <span>Domingos: Cerrado</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CircleAlert className="h-5 w-5 text-primary" />
+                      <span>Requisito: Confirmación de ingreso</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <span>+57 314 513 6801</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-primary" />
-                    <span>Lunes a Viernes: 9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-primary" />
-                    <span>Sábados: 10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-primary" />
-                    <span>Domingos: Cerrado</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CircleAlert className="h-5 w-5 text-primary" />
-                    <span>Requisito: Confirmación de ingreso</span>
-                  </div>
-                </div>
 
                 <div className="mb-8">
                   <h3 className="text-lg font-medium mb-2">Coordenadas</h3>
