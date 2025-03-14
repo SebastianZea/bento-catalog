@@ -20,8 +20,8 @@ import {
 } from "lucide-react";
 
 export default function LocationPage() {
-  // Convertir las coordenadas de formato DMS a decimal
-  // 6°20'42.2"N 75°30'50.0"W
+  
+  const coords = `6°20'42.2\"N 75°30'50.0\"W`;
   const lat = 6 + 20 / 60 + 42.2 / 3600;
   const lng = -(75 + 30 / 60 + 50.0 / 3600); // Negativo porque es Oeste (W)
 
@@ -101,7 +101,7 @@ export default function LocationPage() {
 
                 <div className="mb-8">
                   <h3 className="text-lg font-medium mb-2">Coordenadas</h3>
-                  <p>6°20'42.2"N 75°30'50.0"W</p>
+                  <p>{coords}</p>
                   <p className="text-sm text-muted-foreground">
                     Latitud: {lat.toFixed(6)}, Longitud: {lng.toFixed(6)}
                   </p>
