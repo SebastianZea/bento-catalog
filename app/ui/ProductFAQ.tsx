@@ -1,6 +1,6 @@
 "use client"
 
-import { ProductFAQProps, FAQItem } from "@/types/product"
+import { ProductFAQProps } from "@/types/product"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export function ProductFAQ({ questions }: ProductFAQProps) {

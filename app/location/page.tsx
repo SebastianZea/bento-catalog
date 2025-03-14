@@ -1,6 +1,5 @@
-"use client";
+"use client"
 
-import { useState } from "react";
 import { GoogleMapsEmbed } from "@next/third-parties/google";
 import {
   Card,
@@ -28,14 +27,9 @@ export default function LocationPage() {
 
   const googleMapsUrl = `https://www.google.com/maps?q=${lat},${lng}`;
 
-  // Estado para el modo de transporte
-  const [transportMode, setTransportMode] = useState<
-    "driving" | "transit" | "bicycling"
-  >("driving");
-
   // URL para direcciones según el modo de transporte
   const getDirectionsUrl = () => {
-    return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=${transportMode}`;
+    return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=${"driving"}`;
   };
 
   return (
